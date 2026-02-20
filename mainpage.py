@@ -100,10 +100,11 @@ else:
 filename = "data_for_trending_song.csv"
 if list_top_trending:
     fields = ["Time", "Date Updated", "Song name", "Song rank", "Artist", "Hearts (Real)", "Shares (Real)"] 
-    with open(filename, mode='w', newline='', encoding='utf-8-sig') as file:
+    with open(filename, mode='a', newline='', encoding='utf-8-sig') as file:
         writer = csv.DictWriter(file, fieldnames=fields)
         writer.writeheader()
         writer.writerows(list_top_trending)
     print(f"Lưu thành công vào file {filename}")
 else:
+
     print("There is no data available to write to the file.")
