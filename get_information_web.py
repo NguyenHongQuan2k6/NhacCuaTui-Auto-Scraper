@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 # --- SỬA LỖI CIRCULAR IMPORT ---
 # Thay vì import mainpage, bạn khai báo link trực tiếp ở đây
-url_get = 'https://www.nhaccuatui.com/chart/1-1-d33-2026' 
+url_get = 'https://www.nhaccuatui.com/chart/1-5-d57-2026' 
 # -------------------------------
 
 try:
@@ -37,4 +37,5 @@ try:
         print(f"Lỗi kết nối: Mã {r.status_code}")
 
 except Exception as e:
+
     print(f"Có lỗi xảy ra: {e}")
