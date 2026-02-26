@@ -9,7 +9,7 @@ import filter_data_in_each_songs as code_in_each_songs
 
 # Cấu hình
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-url_get = 'https://www.nhaccuatui.com/chart/1-1-d57-2026'
+url_get = 'https://www.nhaccuatui.com/chart/1-5-d57-2026'
 
 r_main_page = requests.get(url_get, headers=headers)
 
@@ -108,4 +108,5 @@ if list_top_trending:
 else:
 
     print("There is no data available to write to the file.")
+
 
